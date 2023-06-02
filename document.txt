@@ -1,0 +1,26 @@
+To run the deploy.sh script, follow these steps:
+
+Ensure you have the necessary prerequisites installed:
+
+kubectl, command-line tool configured to connect to your Kubernetes cluster.
+Save the deploy.sh script in a convenient location on your local machine, peferably with the nginx yaml file
+
+Make the script executable by cahnging the permissions using: chmod +x deploy.sh
+Ensure you have the nginx deployment YAML file available, nginx-deployment.yaml in this case.
+Modify the YAML file if needed to specify the desired configuration for your nginx deployment.
+
+Open a terminal and navigate to the directory where the deploy.sh script is located.
+
+Run the script with the desired image tag using:
+./deploy.sh -t <image_tag>
+
+<image_tag> is the specific image tag you want to deploy/update for the nginx deployment.
+
+For example, if you want to deploy/update the nginx deployment with the image tag v1.2.3, you would run:
+./deploy.sh -t v1.2.3
+
+The deploy.sh script provides a convenient way to deploy or update the nginx deployment in Kubernetes with a specific image tag. Make sure to have the necessary permissions and configuration in place to access and manage your Kubernetes cluster.
+
+
+
+
